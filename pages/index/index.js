@@ -114,7 +114,7 @@ Page({
   },
 
   addTodo: function (e) {
-    console.log(e)
+    // console.log(e)
     if (!this.data.todo || !this.data.todo.trim()) return;
     var todos = this.data.todos;
     var that = this;
@@ -136,8 +136,8 @@ Page({
         }
 
         var todo = { id: res.data.id, content: that.data.todo, finished: false };
-        console.log("res",res)
-        console.log("todo",todo)
+        // console.log("res",res)
+        // console.log("todo",todo)
         todos.push(todo);
         that.setData({
           todo: '',
