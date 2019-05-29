@@ -37,7 +37,7 @@ App({
             code: res.code
           },
           success: function (res) {
-
+            console.log("res",res)
             var skey = res.data.skey;
 
             console.info('already login, skey is', skey);

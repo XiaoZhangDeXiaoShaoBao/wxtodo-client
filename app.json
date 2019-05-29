@@ -38,5 +38,6 @@
         "selectedIconPath": "assets/me-active.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
