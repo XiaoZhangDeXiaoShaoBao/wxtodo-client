@@ -27,6 +27,7 @@ Component({
     collapsed: true
   },
 
+<<<<<<< HEAD
   // attached: function() {
   //   console.log('component attached!');
   // },
@@ -34,6 +35,15 @@ Component({
   // detached: function() {
   //   console.log('component dettached!');
   // },
+=======
+  attached: function() {
+    console.log('component attached!');
+  },
+
+  detached: function() {
+    console.log('component dettached!');
+  },
+>>>>>>> 78da45adc187eaafb0a70ff3e0dd9af866db7fe8
 
   methods: {
     removeTodo: function () {

@@ -117,6 +117,7 @@ Page({
     // console.log(e)
     if (!this.data.todo || !this.data.todo.trim()) return;
     var todos = this.data.todos;
+<<<<<<< HEAD
     var that = this;
 
     getApp().request({
@@ -146,6 +147,14 @@ Page({
         });
         getApp().writeHistory(todo, 'create', +new Date());
       }
+=======
+    var todo = { content: this.data.todo, finished: false, id: +new Date() };
+    todos.push(todo);
+    this.setData({
+      todo: '',
+      todos: todos,
+      leftCount: this.data.leftCount + 1
+>>>>>>> 78da45adc187eaafb0a70ff3e0dd9af866db7fe8
     });
 
   },

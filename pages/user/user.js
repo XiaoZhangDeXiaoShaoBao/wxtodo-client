@@ -7,8 +7,21 @@ Page({
     name: ''
   },
 
+<<<<<<< HEAD
   onShow: function () {
     this.setData(getApp().globalData.userInfo);
+=======
+  onLoad: function () {
+    this.setData({
+      avatar: wx.getStorageSync('avatar') || 'https://yunlaiwu0.cn-bj.ufileos.com/teacher_avatar.png',
+      name: wx.getStorageSync('name') || ''
+    });
+  },
+
+  //未点完成失去焦点复原（change优先于blur触发）
+  blurName: function(e) {
+    this.setData({ name: wx.getStorageSync('name') });
+>>>>>>> 78da45adc187eaafb0a70ff3e0dd9af866db7fe8
   },
 
   changeName: function(e) {
@@ -35,11 +48,14 @@ Page({
         }
       });
     }
+<<<<<<< HEAD
     else {
       this.setData({
         name: this.data.name
       });
     }
+=======
+>>>>>>> 78da45adc187eaafb0a70ff3e0dd9af866db7fe8
 
   },
 

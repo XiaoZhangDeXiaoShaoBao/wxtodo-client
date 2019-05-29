@@ -1,6 +1,14 @@
 {
+<<<<<<< HEAD
     "navigationBarTitleText": "wxtodo · 历史",
     "usingComponents": {
         "item": "/components/Item/Item"
     }
 }
+=======
+  "navigationBarTitleText": "wxtodo · 历史",
+  "usingComponents": {
+    "item": "/components/Item/Item"
+  }
+}
+>>>>>>> 78da45adc187eaafb0a70ff3e0dd9af866db7fe8
